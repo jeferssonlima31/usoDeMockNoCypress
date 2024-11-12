@@ -1,0 +1,34 @@
+# Sample .coderabbit.yaml configuration file for CodeRabbit
+
+# Define which checks to enable or disable
+checks:
+  - name: "code-quality"
+    enabled: true
+  - name: "security-vulnerabilities"
+    enabled: true
+  - name: "best-practices"
+    enabled: true
+
+# Set up custom thresholds or rules if applicable
+thresholds:
+  code-quality:
+    max-issues: 5
+  security-vulnerabilities:
+    max-critical: 0
+
+# Integration with other tools (optional)
+integrations:
+  github-actions:
+    enabled: true
+  slack:
+    webhook-url: "https://hooks.slack.com/services/your/slack/webhook"
+
+# Notification preferences
+notifications:
+  pull-requests: true
+  email: false
+
+# Additional configuration options
+options:
+  auto-fix: true
+  report-format: "detailed"
