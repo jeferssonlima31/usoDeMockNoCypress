@@ -1,34 +1,15 @@
-# Sample .coderabbit.yaml configuration file for CodeRabbit
-
-# Define which checks to enable or disable
-checks:
-  - name: "code-quality"
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: "pt-BR"
+early_access: false
+reviews:
+  profile: "chill"
+  request_changes_workflow: false
+  high_level_summary: true
+  poem: true
+  review_status: true
+  collapse_walkthrough: false
+  auto_review:
     enabled: true
-  - name: "security-vulnerabilities"
-    enabled: true
-  - name: "best-practices"
-    enabled: true
-
-# Set up custom thresholds or rules if applicable
-thresholds:
-  code-quality:
-    max-issues: 5
-  security-vulnerabilities:
-    max-critical: 0
-
-# Integration with other tools (optional)
-integrations:
-  github-actions:
-    enabled: true
-  slack:
-    webhook-url: "https://hooks.slack.com/services/your/slack/webhook"
-
-# Notification preferences
-notifications:
-  pull-requests: true
-  email: false
-
-# Additional configuration options
-options:
-  auto-fix: true
-  report-format: "detailed"
+    drafts: false
+chat:
+  auto_reply: true

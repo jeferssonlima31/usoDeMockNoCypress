@@ -34,7 +34,7 @@ class user{
 
 
     }
-    userWithFaker2(){
+    userWithFaker(){
 
         navegation()
 
