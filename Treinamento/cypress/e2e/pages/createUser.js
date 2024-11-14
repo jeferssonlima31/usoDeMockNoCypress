@@ -31,7 +31,7 @@ class user{
         cy.get('#AccountFrm_agree').click()
 
         cy.get('.col-md-2 > .btn').click()
-        ///git
+        ///git testetetete
 
     }
     userWithFaker1(){
