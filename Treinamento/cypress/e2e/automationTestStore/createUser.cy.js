@@ -6,6 +6,8 @@ describe('Validation Create User screen', () =>{
         cy.get('.maintext').should('contain','Your Account Has Been Created!')
         cy.url()
           .should('eq','https://automationteststore.com/index.php?rt=account/success')
+          cy.visit('www.google.com.br')
     })
+  
 
-})    
+})    /**teste para entender melhor o funcionamento do coderabbit */
